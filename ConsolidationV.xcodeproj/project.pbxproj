@@ -11,6 +11,8 @@
 		610DCD1028CFDE2E00B0A062 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD0F28CFDE2E00B0A062 /* ContentView.swift */; };
 		610DCD1228CFDE3000B0A062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610DCD1128CFDE3000B0A062 /* Assets.xcassets */; };
 		610DCD1528CFDE3000B0A062 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610DCD1428CFDE3000B0A062 /* Preview Assets.xcassets */; };
+		610DCD1D28CFDE7B00B0A062 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD1C28CFDE7B00B0A062 /* User.swift */; };
+		610DCD1F28CFDE8400B0A062 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD1E28CFDE8400B0A062 /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		610DCD0F28CFDE2E00B0A062 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		610DCD1128CFDE3000B0A062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		610DCD1428CFDE3000B0A062 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		610DCD1C28CFDE7B00B0A062 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		610DCD1E28CFDE8400B0A062 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		610DCD0C28CFDE2E00B0A062 /* ConsolidationV */ = {
 			isa = PBXGroup;
 			children = (
+				610DCD1B28CFDE6600B0A062 /* Models */,
 				610DCD0D28CFDE2E00B0A062 /* ConsolidationVApp.swift */,
 				610DCD0F28CFDE2E00B0A062 /* ContentView.swift */,
 				610DCD1128CFDE3000B0A062 /* Assets.xcassets */,
@@ -65,6 +70,15 @@
 				610DCD1428CFDE3000B0A062 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		610DCD1B28CFDE6600B0A062 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				610DCD1C28CFDE7B00B0A062 /* User.swift */,
+				610DCD1E28CFDE8400B0A062 /* Friend.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			files = (
 				610DCD1028CFDE2E00B0A062 /* ContentView.swift in Sources */,
 				610DCD0E28CFDE2E00B0A062 /* ConsolidationVApp.swift in Sources */,
+				610DCD1D28CFDE7B00B0A062 /* User.swift in Sources */,
+				610DCD1F28CFDE8400B0A062 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
