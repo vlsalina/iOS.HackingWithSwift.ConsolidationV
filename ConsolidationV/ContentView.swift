@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var users = [User]()
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
+            .onAppear() {
+                Services.shared.fetchUsers { (response, error) -> (Void) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                        return
+                    }
+                    
+                    users = response!
+                }
+            }
     }
 }
 
