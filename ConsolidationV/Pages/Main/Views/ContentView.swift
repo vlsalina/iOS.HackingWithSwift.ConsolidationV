@@ -10,20 +10,16 @@ import SwiftUI
 struct ContentView: View {
     @State var users = [User]()
     
-    @State var current: User?
-    @State var showDetails = false
-    
     var body: some View {
         NavigationView {
             VStack {
                 ScrollView {
                     LazyVStack {
                         ForEach(users) { user in
-                            UserBubble(user: user, current: $current, showDetails: $showDetails)
+                            UserBubble(user: user)
                         }
                     }
                 }
-                
             }
             .padding()
             .navigationTitle("Users")

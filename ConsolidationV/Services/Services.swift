@@ -61,7 +61,9 @@ class Services {
             }
             
             do {
-                let users = try JSONDecoder().decode([User].self, from: data)
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                let users = try decoder.decode([User].self, from: data)
                 DispatchQueue.main.async {
                     completion(users, nil)
                 }

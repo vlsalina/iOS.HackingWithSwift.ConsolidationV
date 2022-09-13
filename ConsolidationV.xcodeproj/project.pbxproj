@@ -15,6 +15,10 @@
 		610DCD1F28CFDE8400B0A062 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD1E28CFDE8400B0A062 /* Friend.swift */; };
 		610DCD2228CFE78200B0A062 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD2128CFE78200B0A062 /* Services.swift */; };
 		610DCD2B28D0000900B0A062 /* UserBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD2A28D0000900B0A062 /* UserBubble.swift */; };
+		610DCD3128D003A300B0A062 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD3028D003A300B0A062 /* Details.swift */; };
+		610DCD3328D0069200B0A062 /* CustomGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD3228D0069200B0A062 /* CustomGroup.swift */; };
+		610DCD3528D0DAAF00B0A062 /* TagGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD3428D0DAAF00B0A062 /* TagGroup.swift */; };
+		610DCD3728D1150900B0A062 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610DCD3628D1150900B0A062 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		610DCD1E28CFDE8400B0A062 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		610DCD2128CFE78200B0A062 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		610DCD2A28D0000900B0A062 /* UserBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBubble.swift; sourceTree = "<group>"; };
+		610DCD3028D003A300B0A062 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		610DCD3228D0069200B0A062 /* CustomGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGroup.swift; sourceTree = "<group>"; };
+		610DCD3428D0DAAF00B0A062 /* TagGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagGroup.swift; sourceTree = "<group>"; };
+		610DCD3628D1150900B0A062 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		610DCD2528CFEF9600B0A062 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				610DCD2C28D0038800B0A062 /* Details */,
 				610DCD2628CFEF9C00B0A062 /* Main */,
 			);
 			path = Pages;
@@ -131,6 +140,41 @@
 		610DCD2928CFEFB200B0A062 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		610DCD2C28D0038800B0A062 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				610DCD2F28D0039700B0A062 /* ViewModels */,
+				610DCD2E28D0039200B0A062 /* Models */,
+				610DCD2D28D0038C00B0A062 /* Views */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		610DCD2D28D0038C00B0A062 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				610DCD3028D003A300B0A062 /* Details.swift */,
+				610DCD3228D0069200B0A062 /* CustomGroup.swift */,
+				610DCD3428D0DAAF00B0A062 /* TagGroup.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		610DCD2E28D0039200B0A062 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		610DCD2F28D0039700B0A062 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				610DCD3628D1150900B0A062 /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -205,12 +249,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610DCD3528D0DAAF00B0A062 /* TagGroup.swift in Sources */,
 				610DCD2228CFE78200B0A062 /* Services.swift in Sources */,
 				610DCD1028CFDE2E00B0A062 /* ContentView.swift in Sources */,
+				610DCD3728D1150900B0A062 /* DetailViewModel.swift in Sources */,
 				610DCD2B28D0000900B0A062 /* UserBubble.swift in Sources */,
 				610DCD0E28CFDE2E00B0A062 /* ConsolidationVApp.swift in Sources */,
+				610DCD3328D0069200B0A062 /* CustomGroup.swift in Sources */,
 				610DCD1D28CFDE7B00B0A062 /* User.swift in Sources */,
 				610DCD1F28CFDE8400B0A062 /* Friend.swift in Sources */,
+				610DCD3128D003A300B0A062 /* Details.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
