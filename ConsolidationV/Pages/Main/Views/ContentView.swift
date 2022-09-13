@@ -10,9 +10,23 @@ import SwiftUI
 struct ContentView: View {
     @State var users = [User]()
     
+    @State var current: User?
+    @State var showDetails = false
+    
     var body: some View {
-        Text("Hello, world!")
+        NavigationView {
+            VStack {
+                ScrollView {
+                    LazyVStack {
+                        ForEach(users) { user in
+                            UserBubble(user: user, current: $current, showDetails: $showDetails)
+                        }
+                    }
+                }
+                
+            }
             .padding()
+            .navigationTitle("Users")
             .onAppear() {
                 Services.shared.fetchUsers { (response, error) -> (Void) in
                     if let error = error {
@@ -23,6 +37,8 @@ struct ContentView: View {
                     users = response!
                 }
             }
+            
+        }
     }
 }
 
